@@ -1,0 +1,54 @@
+<!doctype html>
+<html>
+   <head>
+      <title>html학습</title>
+      <meta charset="utf-8">
+
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
+
+      <style>
+       /*
+         h1,h2,h3,h4,h5,h6{
+            font-size: 1rem;
+            color: inherit;
+            margin: 0;
+            padding: 0;
+            font-weight: 400;
+         }  리셋 */
+         
+         h2{
+            font-size: 1.3em;
+            font-weight: 700;
+         } /* 리셋 작업 후 설정 */
+
+         div {
+            color: #00f;
+            text-decoration: underline;
+            cursor: pointer;
+         }
+      </style>
+   </head>
+  
+   <body>
+
+      <!-- h${안녕하세요$}*6-->
+      <h1>안녕하세요</h1>
+      <h2>안녕하세요</h2>
+      <h3>안녕하세요</h3>
+      <h4>안녕하세요</h4>
+      <h5>안녕하세요</h5>
+      <h6>안녕하세요</h6>
+
+      <a href="http://www.naver.com">네이버링크</a>
+      
+      <div>구글 링크</div>
+
+      <script>
+         const $div = document.querySelector('div');
+         $div.onclick = e => {
+            window.location.href = 'https://www.google.com';
+         };
+      </script>
+   </body>
+</html>
+
